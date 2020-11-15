@@ -71,12 +71,12 @@
 						text: 'Chart.js Line Chart - Multi Axis'
 					},
 					scales: {
-						y: {
+						yAxes[{
 							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
 							display: true,
 							position: 'left',
-						},
-						y1: {
+							id: "y",
+						},{
 							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
 							display: true,
 							position: 'right',
@@ -85,6 +85,7 @@
 							gridLines: {
 								drawOnChartArea: false, // only want the grid lines for one axis to show up
 							},
+							id: "y1",
 						},
 					}
 				}
